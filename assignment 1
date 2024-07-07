@@ -1,0 +1,162 @@
+<!--Header with Navigation Bar-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Chess Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ultimate Chess Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="#overview">Game Overview</a></li>
+                <li><a href="#highlights">Game Highlights</a></li>
+                <li><a href="#get-started">How to Get Started</a></li>
+                <li><a href="#interactive">Interactive</a></li>
+                <li><a href="#footer">Footer</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<!--CSS-->
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+<!--Game Overview-->
+
+    <section id="overview">
+        <h2>Game Overview</h2>
+        <p>Chess is a two-player strategy board game that has been around for centuries. The objective is to checkmate the opponent's king. The game is played on an 8x8 grid with 16 pieces per player, including pawns, knights, bishops, rooks, a queen, and a king.</p>
+        <p>The game originated in India in the 6th century and spread to Persia and then Europe. Today, it is played worldwide, with official tournaments and championships held regularly.</p>
+    </section>
+
+<!--Game Highlights-->
+
+    <section id="highlights">
+        <h2>Game Highlights</h2>
+        <p>Chess has had many memorable moments and legendary players:</p>
+        <ul>
+            <li>Bobby Fischer's World Championship win in 1972.</li>
+            <li>Garry Kasparov's dominance in the 1980s and 1990s.</li>
+            <li>Magnus Carlsen's reign as the current World Chess Champion.</li>
+        </ul>
+        <h3>Infographic: Top Chess Players</h3>
+        <img src="top-players.jpg" alt="Top Chess Players Infographic">
+    </section>
+
+<!--CSS-->
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+<!--How to Get Started-->
+
+    <section id="get-started">
+        <h2>How to Get Started</h2>
+        <p>Getting started with chess is easy. Here’s what you need:</p>
+        <ul>
+            <li>A chessboard and pieces.</li>
+            <li>Basic understanding of the rules and piece movements.</li>
+            <li>Practice by playing with friends or online.</li>
+        </ul>
+        <p>Beginner Tips:</p>
+        <ul>
+            <li>Control the center of the board.</li>
+            <li>Develop your pieces early.</li>
+            <li>Keep your king safe by castling.</li>
+        </ul>
+    </section>
+
+<!--Interactive Element-->
+
+    <section id="interactive">
+        <h2>Interactive Chess Quiz</h2>
+        <p>Test your chess knowledge with our quiz:</p>
+        <div id="quiz">
+            <p>Question: Which piece can move in an "L" shape?</p>
+            <button onclick="checkAnswer('knight')">Knight</button>
+            <button onclick="checkAnswer('bishop')">Bishop</button>
+            <button onclick="checkAnswer('rook')">Rook</button>
+            <p id="result"></p>
+        </div>
+    </section>
+
+<!--JavaScript-->
+
+<script>
+function checkAnswer(answer) {
+    const result = document.getElementById('result');
+    if (answer === 'knight') {
+        result.textContent = 'Correct!';
+        result.style.color = 'green';
+    } else {
+        result.textContent = 'Wrong! Try again.';
+        result.style.color = 'red';
+    }
+}
+</script>
+
+<!--Footer-->
+
+    <footer id="footer">
+        <p>&copy; 2024 Ultimate Chess Hub. All rights reserved.</p>
+        <p><a href="https://www.fide.com">Official FIDE Website</a></p>
+        <p><a href="https://www.chess.com">Chess.com</a></p>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
